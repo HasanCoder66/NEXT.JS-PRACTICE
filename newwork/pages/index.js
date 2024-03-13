@@ -1,16 +1,22 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import Button from "./components/button/Button";
+import Lists from "./components/list/Lists";
+
 
 export default function Home() {
+  const dataOfArray = ['be honest' , 'tell truth' ,'never cheat']
   return (
     <>
       <h1>
-        Hello world
+        Welcome to 2nd video practice with Ishaq Bhojani
       </h1>
+     {dataOfArray.map((items)=> (
+      <Lists data={items}/>
+     ))}
+      <h3>
+        Oper map ke zariye data display keraya jaraha hai 
+      </h3>
+      <Button text='click this button'/>
     </>
   );
 }
