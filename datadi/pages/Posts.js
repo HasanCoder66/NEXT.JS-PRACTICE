@@ -4,11 +4,11 @@ import data from "./utils/data.json";
 
 const AllPosts = () => {
   const [postsArr, setPostArr] = useState(data.posts);
-  console.log(postsArr);
+  // console.log(postsArr);
   return (
-    <div>
+    <div className='flex justify-between flex-wrap mt-[2rem] px-[50px]'>
       {postsArr.map((data) => (
-        <PostCardCmp data={postsArr} />
+        <PostCardCmp data={data} />
       ))}
       {/* <PostCardCmp data={postsArr} /> */}
     </div>

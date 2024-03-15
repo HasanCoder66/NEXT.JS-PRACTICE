@@ -6,7 +6,7 @@ import { LiaCommentSolid } from "react-icons/lia";
 
 
 const PostCardCmp = ({data}) => {
-  // console.log(data);
+  console.log(data);
  
   return(
     <Card
@@ -15,7 +15,7 @@ const PostCardCmp = ({data}) => {
       width: 240,
       marginBottom: 20,
     }}
-    cover={<img alt="example" src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710499747/branding%20hopes/WhatsApp_Image_2024-03-15_at_14.34.05_25bf20d3_iwzafm.jpg" />}
+    cover={<img alt="example" src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503600/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_d669a89d_uooczs.jpg" />}
   >
     {/* <Meta title={`${data?.firstName} ${data?.lastName}` } description={data?.phone} /> */}
    <Divider />
