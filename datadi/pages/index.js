@@ -8,20 +8,23 @@ import data from "./utils/data.json";
 export default function Home() {
   const [dataArr, datSetArr] = useState(data.authors);
   return (
-    <div>
-      Home Page
+    // <div>
+    //   Home Page
 
-      <p className="text-3xl">
-        Our Coustomers
-      </p>
-      <p className="text-2xl">
-        Go to Coustomers
-      </p>
-    </div>
-    // <div className="flex justify-between flex-wrap mt-[2rem] px-[50px] ">
-    //   {dataArr.map((data) => (
-    //     <CardCmp data={data} />
-    //   ))}
+    //   <p className="text-3xl">
+    //     Our Coustomers
+    //   </p>
+    //   <p className="text-2xl">
+    //     Go to Coustomers
+    //   </p>
     // </div>
+
+    //     ahead of time (aot)
+    // just in time (jit)
+    <div className="flex justify-between flex-wrap mt-[2rem] px-[50px] ">
+      {dataArr.map((data) => (
+        <CardCmp data={data} />
+      ))}
+    </div>
   );
 }
